@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<div class="container">
+    <div id="introduction" style="opacity: 0;">Нажмите и держите, чтобы создать мост</div>
+  <div id="score"></div>
+  <div id="UserName">Guest</div>
+    
+  <canvas id="game" width="375" height="375"></canvas>
+  <div id="perfect">X2</div>
+  <button id="restart">Перезапустить</button>
+
+</div>
+<script src="script.js"></script>
+<script>
+    let tg = window.Telegram.WebApp;
+    tg.expand();
+    document.getElementById("UserName").value = tg.initDadaUnsafe.user.username;
+</script>
