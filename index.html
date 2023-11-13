@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Ninja</title>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(95553229, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/95553229" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+    <div class="container">
+      <script>
+let reader = new FileReader();
+          reader.readAsText('bestScore.txt');
+          reader.onload = function(){
+              console.log(reader.result);
+          }
+</script>
+       <script>
+           let tg = window.Telegram.WebApp;
+           tg.expand();
+        </script>
+        <div id="bestScore" style="opacity: 0;">0</div>
+        <div id="introduction" style="opacity: 0;">Нажмите и держите, чтобы создать мост</div>
+        <div id="score"></div>
+        <div id="Record">
+            <img src="score.png" width="50" align="middle"/><p id="RC" align="middle">0</p>
+        </div>
+        <canvas id="game" width="375" height="375"></canvas>
+        <div id="perfect">+5</div>
+        <button id="restart">ПЕРЕЗАПУСТИТЬ</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

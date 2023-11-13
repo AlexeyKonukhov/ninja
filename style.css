@@ -1,0 +1,77 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  -ms-user-select: none; 
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+}
+
+#Record {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 1.4em;
+  font-weight: 900;
+  color: black;
+    width: auto;
+}
+
+#introduction {
+  width: 200px;
+  height: 150px;
+    top: 100px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 1em;
+  font-family: "Cascadia code", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#restart {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Cascadia code", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}
+
+#perfect {
+  position: absolute;
+top: 100px;
+  opacity: 0;
+  transition: opacity 2s;
+  font-size: 4em;
+    color: red;
+}
+
